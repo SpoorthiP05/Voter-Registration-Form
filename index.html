@@ -1,0 +1,238 @@
+<!doctype html>
+<html>
+<head>
+<meta charset = "utf-8"/>
+<title>Voter Registration Form</title>
+<link href="style.css"rel="stylesheet"type="text/css"/>
+</head>
+<body>
+<header>
+<figure>
+<img class="photo-left" src="india.png"width="100"height="80"/>
+</figure>
+<figure>
+<img class="photo-right" src="vote.png"alt="a cup of coffee"width="100"height="60"/>
+</figure>
+<h1>राष्ट्रीय मतदान सेवा डेमो पोर्टल </h1>
+<h2>NATIONAL VOTERS' SERVICES DEMO PORTAL</h2>
+</header>
+<form action="Voter Registration.php" method="post">
+<fieldset>
+<button class="b2">A+</button>
+<button class="b4" style="margin-right:510px;">A-</button>
+Select Language:<select name="language" style="width:100px;height:20px;float:right;margin-right:30px;background-color:gray;color:white;">
+<option value="english">English</option>
+<option value="hindi">Hindi</option>
+</select>
+</fieldset>
+<h3>Note: Fields marked with asterisks (<b style="color:red;"> * </b>) are mandatory</h3>
+<fieldset style="width:840px;margin-left:40px;margin-right:40px;background-color:#f0edec">
+<p style="background-color:#ccc9c8;margin:0px;border:0;padding:10px;">Type 6<br/>
+[See rule 13(1) and 26]</p>
+<p style="background-color:#E79E86;margin:0px;border:0;padding:10px;">Application for inclusion of name in the electoral roll for the first time due to the transfer of voter or any other constituency from any one constituency</p>
+<section>
+<p>In service</p>
+<p>Electoral Registration Officer,</p>
+<blockquote><blockquote>State<b style="color:red;"> * </b> <select name="state" style="background-color:gray;color:white;margin-right:80px" required>
+<option value="">Select</option>
+</select>
+District <select name="district" style="background-color:gray;color:white;">
+<option value="">Select</option>
+</select><br/></br>
+Legislative Assembly / Parlimentary <select name="Legislative" style="background-color:gray;color:white;" required>
+<option value="">Select</option>
+</select></br>
+constituency<b style="color:red;"> * </b>
+</blockquote></blockquote>
+I request that my name be included in electoral rolls for all the aforesaid areas.</br>
+<blockquote><blockquote>
+<input type="radio"name="aforesaid "value="First time voter"/> First time voter</br>
+<input type="radio"name="aforesaid "value=" Due to transfer from other meeting areas."/> Due to transfer from other meeting areas.</br>
+</blockquote></blockquote></br></br>
+Below are specifications in support of my claim to be included in the electoral rolls.
+</section></br>
+<p style="background-color:#E79E86;margin:0px;border:0;padding:10px;">Mandatory specifications</p>
+<section>
+<blockquote><blockquote>
+(A) Name <b style="color:red;"> * </b><input type="text"name="name"required size="15" placeholder="(In English)" style="margin-right:15px" required />
+<input type="text"name="name"required size="15" placeholder="(In Regional)"required/>
+</br>
+</br> 
+(B) Surname (if any) <b style="color:red;"> * </b><input type="text"name="surname"required size="15" placeholder="(In English)"style="margin-right:15px"required />
+<input type="text"name="surname"required size="15" placeholder="(In Regional)"/>
+</br>
+</br>
+(C) Name of the applicant's relative <b style="color:red;"> * </b ><input type="text"name="relative"required size="15" placeholder="(In English)"style="margin-right:15px"required />
+<input type="text"name="relative"required size="15" placeholder="(In Regional)"required/>
+</br>
+</br>
+Nickname of the applicant's relative<b style="color:red;"> * </b ><input type="text"name="Nickname"required size="15" placeholder="(In English)"style="margin-right:15px"required />
+<input type="text"name="Nickname"required size="15" placeholder="(In Regional)"required />
+</br>
+</br>
+(D) Type of the relationship<b style="color:red;"> * </b >  <select name="relationship" style="background-color:gray;color:white;" required>
+<option value="">Select</option>
+</br>
+</select>
+</br></br>
+<input type="radio"name="Age"value="(E) Age [on January 1 of the current calender] *" style="margin:0"/> (E) Age [on January 1 of the current calender] <b style="color:red;"> * </b >
+<input type="text"name="Year"required size="15" placeholder="2019" required />
+<select name="Year" style="background-color:gray;color:white;" required>
+<option value="">Year</option>
+</select>
+<select name="Month" style="background-color:gray;color:white;" required>
+<option value="">Month</option>
+</select>
+</br>
+</br>
+Or
+</br></br>
+<input type="radio"name="Age"value="(F) Date of birth (in the form of day/ month/ year)"style="margin:0"/> (F) Date of birth (in the form of day/ month/ year)
+<input type="Date"name="Date"required size="15" required /></br>
+(if known) <b style="color:red;"> * </b ></br></br>
+(G) Applicant's gender  <b style="color:red;"> * </b > 
+<select name="gender" style="background-color:gray;color:white;">
+<option value="">Select</option>
+<option value="Male">Male</option>
+<option value="Female">Female</option>
+</select>
+</blockquote></blockquote>
+</section>
+<p style="background-color:#E79E86;margin:0px;border:0;padding:10px;">(H) Current address, whose applicant is nominally resident</p>
+<section>
+<blockquote><blockquote>
+House no<b style="color:red;"> * </b> <input type="text"name="House no"required size="15" placeholder="(In English)" style="margin-right:15px"required />
+<input type="text"name="House no"required size="15" placeholder="(In Regional)"required/>
+</br>
+</br>
+Street / area / location <b style="color:red;"> * </b> <input type="text"name="Street / area / location"required size="15" placeholder="(In English)" style="margin-right:15px"required />
+<input type="text"name="Street / area / location"required size="15" placeholder="(In Regional)"required/>
+</br>
+</br>
+City / Village: <b style="color:red;"> * </b> <input type="text"name="City / Village"required size="15" placeholder="(In English)" style="margin-right:15px"required />
+<input type="text"name="City / Village"required size="15" placeholder="(In Regional)"required />
+</br>
+</br>
+Post Office:<b style="color:red;"> * </b> <input type="text"name="Post Office"required size="15" placeholder="(In English)" style="margin-right:15px"required />
+<input type="text"name="Post Office"required size="15" placeholder="(In Regional)"required />
+</br>
+</br>
+Pin Code <b style="color:red;"> * </b> 
+<input type="text"name="Pin Code"required size="15" required />
+</br>
+</br>
+State / Union Territory <b style="color:red;"> * </b> 
+<select name="state" style="background-color:gray;color:white;margin-right:80px" required>
+<option value="">Select</option>
+</select>
+</br>
+</br>
+District <b style="color:red;"> * </b> 
+<select name="district" style="background-color:gray;color:white;margin-right:80px" required>
+<option value="">Select</option>
+</select>
+</br>
+</br>
+</blockquote></blockquote>
+<hr>
+<blockquote>
+</br>
+Family / Neighbour Epic No. 
+<input type="text"name="Family" size="15"/>
+</br>
+</br>
+</blockquote>
+<hr>
+</section>
+<p style="background-color:#E79E86;margin:0px;border:0;padding:10px;">Optional specialties</p>
+<section>
+<blockquote><blockquote>
+(T) Disability (if any)</br></br>
+
+<input type="checkbox"name="Disability"value="Visual" style="margin:0"/>Visual impairment
+<input type="checkbox"name="Disability"value="speech"/>Speech and hearing impairment
+<input type="checkbox"name="Disability"value="Motion"/>Motion disabling
+<input type="checkbox"name="Disability"value="other"/>other<input type="text"name="other" size="15" style="margin-left:15px"/>
+</br> 
+</br>
+(Th) Email ID (optional)<input type="text"name="Email" size="15"style="margin-left:15px"/>   
+</br>
+</br>
+<p style="margin-right:15px">(D) mobile number (optional)   +91<input type="text"name="mobile" size="15" style="margin-left:15px"/> </p>
+</blockquote></blockquote>
+</section>
+<p style="background-color:#E79E86;margin:0px;border:0;padding:10px;">Upload supporting documents (Supported formats .jpg, .png, .bmp, .jpeg) (max. 2MB)<a href="Voter Registration.html" style="margin-left:50px">List of supported documents</a></p>
+<section>
+<blockquote><blockquote>
+Your photo<b style="color:red;"> * </b></br>
+<button><input type="file"name="Your photo"required size="15" required /></button></br>
+Age proof<b style="color:red;"> * </b></br>
+<button style="margin-right:70px"><input type="file"name="Age proof"required size="15" required /></button>
+Document type <b style="color:red;"> * </b>
+<select name="district" style="background-color:gray;color:white;margin-right:80px" required>
+<option value="">Select</option>
+</select></br>
+Adress proof<b style="color:red;"> * </b></br>
+<button style="margin-right:70px"><input type="file"name="Age proof"required size="15"required /></button>
+Document type<b style="color:red;"> * </b>
+<select name="district" style="background-color:gray;color:white;margin-right:80px" required>
+<option value="">Select</option>
+</select>
+</blockquote></blockquote>
+</section>
+<p style="background-color:#E79E86;margin:0px;border:0;padding:10px;">Declaration</p>
+<section></br></br>
+<p>I declare I declare that according to my best knowledge and belief</br>
+I am a citizen of India and of my birth;</p>
+<blockquote><blockquote>
+City / Village:     
+<input type="text"name="vill" size="15" style="margin-left:15px"/>
+</br></br>
+Select state <b style="color:red;"> * </b>
+<select name="state" style="background-color:gray;color:white;margin-right:30px" required>
+<option value="">Select</option>
+</select> 
+District <b style="color:red;"> * </b>
+<select name="district" style="background-color:gray;color:white;margin-left:15px" required>
+<option value="">Select</option>
+</select></br>   </br>  
+Date<b style="color:red;"> * </b> 
+<input type="Date"name="Date"required size="15" /></br>
+</blockquote></blockquote>
+<p>(ii) I am a nominally resident in the address given in the above (date, month, year) above;</p>
+
+<p>I have not applied to include my name in the electoral roll for any other constituency;</p>
+<blockquote><blockquote>
+<input type="radio"name="constituency "value="has not been already included"style="margin:0"/>(iv) My name has not been already included in the electoral roll for this or any other assembly / parliamentary constituency</br>
+</br>
+Or</br>
+</br>
+<input type="radio"name="constituency "value="have been included"style="margin:0"/>My name would have been included in electoral rolls of the State's constituency, in which I was already residing in the address mentioned</blockquote></blockquote> below, and if so, then I request that it be removed from that electoral roll. Go.</br>
+</br></br>
+<hr>
+</br></br>
+<blockquote><blockquote>
+Location<b style="color:red;"> * </b>
+<input type="text"name="location" size="15" style="margin-left:15px;margin-right:30px" required />    
+date 
+<input type="Date"name="Date" size="15" />
+</br>
+</blockquote></blockquote>
+I am afraid that the statement or declaration, which is false, to whom I know it or believe that it is false or I do not believe in being true, the People's</br> Representation Act, 1950 (43 of 1950 ) Is punishable under section 31</br></br>
+<blockquote><blockquote>
+Captcha
+<img src="captcha.png"width="120px"height="40px">
+<b style="font-size:20px;margin-right:15px" >⟳ </b>
+<input type="text"name="loca" size="15" requiredS ></br></br>
+
+<input type="reset"value="Reset" style="background-color:green;margin-left:300px;color:white;padding:5px;font-size:14">  
+<input type="submit"value="Submit" style="background-color:green;color:white;padding:5px;font-size:14">
+</blockquote></blockquote>      
+</section>
+</fieldset>
+</form>
+<footer style="background-color:black;height:60px;">
+<p style="color:#f0edec;text-align:center;margin-top:0px;font-size:12px;padding:20px 0">Copyright © 2019 Suven Consultants and Technology Pvt. Ltd.</p>
+</footer>
+</body>
+</html>
